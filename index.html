@@ -1,8 +1,8 @@
 <!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>к/п театр</title>
 <body style="font:18px system-ui;background:#f3ead8;color:#222;display:grid;place-items:center;height:100vh;margin:0"><p>Секунду, открываю…</p>
 <script>
-// ?to=КОД[&s=метка]: med = страница медитаций (Weeek), bot = теперь закрытый канал (бот выключен из работы 04.11), survey = анкета simpoll, ch = канал
-var M={med:"https://app.weeek.net/s/teatralnye-meditacii-na-hodu-project-document-MTI1NzU2MHxhMmZjYTNiMy05YTQ0LTQ5MjItODYzZC03MTliM2I4NGE0MjE=",bot:"https://t.me/+lHqMbJ_TABQ5MDk0",survey:"https://simpoll.ru/run/survey/4b5ed28d",ch:"https://t.me/+lHqMbJ_TABQ5MDk0"};
+// ?to=КОД[&s=метка]: med = страница медитаций (Weeek), bot = теперь закрытый канал (бот выключен из работы 04.11), hub = закреплённый пост канала (для своих), survey = анкета simpoll, ch = канал
+var M={med:"https://app.weeek.net/s/teatralnye-meditacii-na-hodu-project-document-MTI1NzU2MHxhMmZjYTNiMy05YTQ0LTQ5MjItODYzZC03MTliM2I4NGE0MjE=",bot:"https://t.me/+lHqMbJ_TABQ5MDk0",survey:"https://simpoll.ru/run/survey/4b5ed28d",hub:"https://t.me/c/4420832801/44",ch:"https://t.me/+lHqMbJ_TABQ5MDk0"};
 var p=new URLSearchParams(location.search),c=p.get("to")||"bot",s=(p.get("s")||"").replace(/[^a-z0-9_]/gi,"").slice(0,20);
 if(!M[c])c="bot";var u=M[c];
 var N="https://abacus.jasoncameron.dev/hit/kpteatr-jim/",go=function(){location.replace(u)},t=setTimeout(go,1500);
